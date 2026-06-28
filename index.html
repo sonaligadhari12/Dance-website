@@ -1,194 +1,71 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Rhythm Within — Premium Dance Learning for Kids, Teens & Adults</title>
-  <meta name="description" content="Explore dance as culture, confidence and expression. Learn Bollywood, Hip-Hop, Kathak, Bharatanatyam, Ballet, Salsa, Contemporary, Jazz, Folk and Freestyle with age-based lesson paths." />
-  <meta name="theme-color" content="#070707" />
-  <meta property="og:title" content="Rhythm Within — Dance Learning for Every Age" />
-  <meta property="og:description" content="A premium dark cultural dance education website with lessons for kids, teens and adults." />
-  <meta property="og:type" content="website" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rhythm Within | Dance Learning for Kids, Teens & Adults</title>
+  <meta name="description" content="A premium dark cultural dance learning website with age-based dance tabs, style lessons, and visual examples for kids, teens, and adults." />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="grain" aria-hidden="true"></div>
-  <div class="cursor-glow" aria-hidden="true"></div>
-
-  <header class="site-header" id="top">
-    <a class="brand" href="#top" aria-label="Rhythm Within home">
-      <span class="brand-mark">RW</span>
-      <span><strong>Rhythm</strong> Within</span>
-    </a>
-    <nav class="main-nav" id="mainNav">
-      <a href="#paths">Age Paths</a>
-      <a href="#styles">Styles</a>
-      <a href="#lessons">Lessons</a>
-      <a href="#culture">Culture</a>
-      <a href="#gallery">Gallery</a>
-      <a href="#contact">Contact</a>
+  <div class="noise"></div>
+  <header class="nav">
+    <a class="brand" href="#home"><span class="logo">✦</span><span>Rhythm Within</span><small>Dance. Culture. Confidence.</small></a>
+    <nav>
+      <a href="#age-tabs">Age Groups</a><a href="#styles">Dance Styles</a><a href="#lessons">Lessons</a><a href="#gallery">Gallery</a>
     </nav>
-    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+    <a class="btn btn-primary" href="#age-tabs">Start Learning</a>
   </header>
 
-  <main>
-    <section class="hero section" aria-labelledby="hero-title">
-      <div class="hero-bg">
-        <img src="assets/images/hero-dancer.svg" alt="Abstract golden dancer silhouette on a dark cultural stage" class="hero-figure" />
-        <div class="orb orb-one"></div>
-        <div class="orb orb-two"></div>
-        <div class="mandala"></div>
+  <main id="home">
+    <section class="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Premium personal dance education</p>
+        <h1>Learn dance through rhythm, culture, confidence, and expression.</h1>
+        <p class="lead">Explore the most loved dance styles for kids, teens, and adults with visual examples, beginner lessons, cultural context, and practical practice routines.</p>
+        <div class="hero-actions"><a class="btn btn-primary" href="#age-tabs">Choose Your Age Group</a><a class="btn btn-ghost" href="#styles">Explore Styles</a></div>
+        <div class="stats"><span><b>30+</b> visual tabs</span><span><b>10</b> dance styles</span><span><b>All</b> ages</span></div>
       </div>
-      <div class="hero-content reveal">
-        <p class="eyebrow">Premium Dance Education · Culture · Confidence</p>
-        <h1 id="hero-title">Discover dance as rhythm, culture, and self-expression.</h1>
-        <p class="hero-copy">A cinematic personal dance website that teaches movement foundations, cultural meaning, and beginner-friendly lessons for kids, teens, and adults.</p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#lessons">Start Learning</a>
-          <a class="btn btn-secondary" href="#styles">Explore Styles</a>
-        </div>
-        <div class="trust-row" aria-label="Website highlights">
-          <span>12 dance styles</span>
-          <span>36 starter lessons</span>
-          <span>All age groups</span>
-          <span>Beginner friendly</span>
-        </div>
-      </div>
-      <aside class="hero-card reveal delay-1" aria-label="Featured dance lesson">
-        <span class="live-dot"></span>
-        <p class="card-kicker">Featured lesson</p>
-        <h2>Groove, posture & expression basics</h2>
-        <p>Build the three foundations that make every dance style feel graceful and confident.</p>
-        <div class="mini-meter"><span style="width: 78%"></span></div>
-      </aside>
+      <div class="hero-card reveal"><img src="assets/images/styles/bollywood.svg" alt="Bollywood dancers example" /></div>
     </section>
 
-    <section class="section intro reveal">
-      <div class="section-heading">
-        <p class="eyebrow">The Philosophy</p>
-        <h2>Not only steps. A complete understanding of dance.</h2>
+    <section id="age-tabs" class="section age-section">
+      <div class="section-head reveal"><p class="eyebrow">Age-based learning</p><h2>Dance for every age</h2><p>Click Kids, Teens, or Adults. Then click any mini-tab to see the most popular dance style, image, explanation, lessons, and benefits for that age group.</p></div>
+      <div class="age-tabs reveal" role="tablist">
+        <button class="age-tab active" data-age="kids">👧 Kids 4–12</button>
+        <button class="age-tab" data-age="teens">🧑 Teens 13–18</button>
+        <button class="age-tab" data-age="adults">👨 Adults 19+</button>
       </div>
-      <div class="intro-grid">
-        <article><h3>Movement</h3><p>Learn posture, timing, balance, coordination and clean transitions.</p></article>
-        <article><h3>Meaning</h3><p>Understand the cultural roots, emotion and storytelling behind each style.</p></article>
-        <article><h3>Confidence</h3><p>Practice in a safe progression from simple rhythm to expressive performance.</p></article>
+      <div class="age-layout reveal">
+        <aside class="style-list" id="miniTabs"></aside>
+        <article class="age-detail" id="ageDetail"></article>
       </div>
     </section>
 
-    <section class="section paths" id="paths">
-      <div class="section-heading reveal">
-        <p class="eyebrow">Learn By Age</p>
-        <h2>Separate learning journeys for kids, teens and adults.</h2>
-      </div>
-      <div class="path-tabs reveal">
-        <button class="tab active" data-tab="kids">Kids</button>
-        <button class="tab" data-tab="teens">Teens</button>
-        <button class="tab" data-tab="adults">Adults</button>
-      </div>
-      <div class="path-panel reveal" id="pathPanel"></div>
-    </section>
-
-    <section class="section styles" id="styles">
-      <div class="section-heading reveal">
-        <p class="eyebrow">Dance Styles</p>
-        <h2>Explore each style as a separate learning world.</h2>
-      </div>
+    <section id="styles" class="section">
+      <div class="section-head reveal"><p class="eyebrow">Complete dance library</p><h2>Separate section for every dance style</h2><p>Each card introduces the origin, mood, beginner focus, and what makes the style special.</p></div>
       <div class="style-grid" id="styleGrid"></div>
     </section>
 
-    <section class="section lessons" id="lessons">
-      <div class="section-heading reveal">
-        <p class="eyebrow">Actual Lessons</p>
-        <h2>Begin with structured, practical lessons you can follow today.</h2>
-        <p>Use the filters to choose an age group or dance style. Each lesson includes a goal, steps, practice time and safety note.</p>
-      </div>
-      <div class="lesson-controls reveal">
-        <select id="ageFilter" aria-label="Filter lessons by age">
-          <option value="all">All ages</option>
-          <option value="Kids">Kids</option>
-          <option value="Teens">Teens</option>
-          <option value="Adults">Adults</option>
-        </select>
-        <select id="styleFilter" aria-label="Filter lessons by style">
-          <option value="all">All styles</option>
-        </select>
-        <input id="lessonSearch" type="search" placeholder="Search lessons..." aria-label="Search lessons" />
-      </div>
-      <div class="lesson-grid" id="lessonGrid"></div>
-    </section>
-
-    <section class="section culture" id="culture">
-      <div class="culture-card reveal">
-        <div>
-          <p class="eyebrow">Cultural Spotlight</p>
-          <h2>Every movement carries a story.</h2>
-          <p>Classical mudras, folk rhythms, stage presence and modern grooves all teach something different: discipline, community, emotion and identity. This website treats dance as an art form, not just choreography.</p>
-          <a class="btn btn-secondary" href="#contact">Request a Topic</a>
-        </div>
-        <img src="assets/images/cultural-stage.svg" alt="Cultural stage illustration with golden patterns and dance spotlight" />
+    <section id="lessons" class="section lessons">
+      <div class="section-head reveal"><p class="eyebrow">Lesson roadmap</p><h2>Beginner learning paths</h2></div>
+      <div class="lesson-grid">
+        <div class="lesson-card reveal"><span>01</span><h3>Warm-up & posture</h3><p>Start with neck rolls, shoulder circles, hip mobility, ankle warm-ups, and neutral posture. This prevents injury and improves line quality.</p></div>
+        <div class="lesson-card reveal"><span>02</span><h3>Rhythm & counting</h3><p>Learn 4-count and 8-count timing. Clap the beat first, then add footwork, arms, expressions, and transitions.</p></div>
+        <div class="lesson-card reveal"><span>03</span><h3>Basic steps</h3><p>Practice two foundation steps from your selected style every day. Keep movement clean before increasing speed.</p></div>
+        <div class="lesson-card reveal"><span>04</span><h3>Performance confidence</h3><p>Use facial expression, eye focus, stage spacing, and musical pauses to make simple steps look professional.</p></div>
       </div>
     </section>
 
-    <section class="section gallery" id="gallery">
-      <div class="section-heading reveal">
-        <p class="eyebrow">Visual Direction</p>
-        <h2>A premium dark gallery with cultural warmth.</h2>
-      </div>
-      <div class="gallery-grid reveal">
-        <figure><img src="assets/images/bollywood.svg" alt="Bollywood dance illustration" /><figcaption>Bollywood energy</figcaption></figure>
-        <figure><img src="assets/images/classical.svg" alt="Classical dance illustration" /><figcaption>Classical expression</figcaption></figure>
-        <figure><img src="assets/images/hiphop.svg" alt="Hip hop dance illustration" /><figcaption>Street rhythm</figcaption></figure>
-        <figure><img src="assets/images/salsa.svg" alt="Salsa dance illustration" /><figcaption>Partner flow</figcaption></figure>
-      </div>
-    </section>
-
-    <section class="section faq reveal">
-      <div class="section-heading">
-        <p class="eyebrow">Beginner Questions</p>
-        <h2>Start with clarity.</h2>
-      </div>
-      <div class="accordion" id="accordion">
-        <button>Do I need previous dance experience?<span>+</span></button>
-        <div><p>No. The lessons are structured from rhythm, posture and simple counts before moving into style-specific choreography.</p></div>
-        <button>Can children and adults learn from the same site?<span>+</span></button>
-        <div><p>Yes. Kids, teens and adults have separate sections with different goals, safety notes and practice routines.</p></div>
-        <button>Which style should I start with?<span>+</span></button>
-        <div><p>For fun and confidence start with Bollywood or Freestyle. For discipline choose Classical. For fitness choose Zumba or Hip-Hop.</p></div>
-      </div>
-    </section>
-
-    <section class="section contact" id="contact">
-      <div class="contact-card reveal">
-        <div>
-          <p class="eyebrow">Final CTA</p>
-          <h2>Begin with one step, one rhythm, one moment of confidence.</h2>
-          <p>Use this website to teach, inspire and guide people of every age into the world of dance.</p>
-        </div>
-        <form onsubmit="event.preventDefault(); alert('Thank you! This demo form can be connected to Formspree, Netlify Forms or your backend.');">
-          <input type="text" placeholder="Your name" required />
-          <input type="email" placeholder="Email address" required />
-          <select required>
-            <option value="">I am interested in...</option>
-            <option>Kids dance basics</option>
-            <option>Teen performance skills</option>
-            <option>Adult beginner lessons</option>
-            <option>Dance culture articles</option>
-          </select>
-          <textarea placeholder="Message" rows="4"></textarea>
-          <button class="btn btn-primary" type="submit">Send Message</button>
-        </form>
+    <section id="gallery" class="section">
+      <div class="section-head reveal"><p class="eyebrow">Visual inspiration</p><h2>Dance image gallery</h2></div>
+      <div class="gallery-grid">
+        <img src="assets/images/gallery/gallery-1.svg" alt="Dance gallery moment 1"><img src="assets/images/gallery/gallery-2.svg" alt="Dance gallery moment 2"><img src="assets/images/gallery/gallery-3.svg" alt="Dance gallery moment 3"><img src="assets/images/gallery/gallery-4.svg" alt="Dance gallery moment 4"><img src="assets/images/gallery/gallery-5.svg" alt="Dance gallery moment 5"><img src="assets/images/gallery/gallery-6.svg" alt="Dance gallery moment 6">
       </div>
     </section>
   </main>
-
-  <footer class="site-footer">
-    <p>© <span id="year"></span> Rhythm Within. Designed as a premium dance education experience.</p>
-    <a href="#top">Back to top ↑</a>
-  </footer>
-
+  <footer class="footer"><b>Rhythm Within</b><span>Premium dance learning website for kids, teens, adults, and culture lovers.</span></footer>
   <script src="script.js"></script>
 </body>
 </html>
