@@ -1,7 +1,8 @@
-Upload these files directly to the GitHub repository root:
+Upload these files directly into the GitHub repository root:
 
 index.html
 style.css
 script.js
 
-The assets/images folder is no longer required because all image sections were removed.
+Do not upload the ZIP file itself.
+Do not place the files inside another folder.
