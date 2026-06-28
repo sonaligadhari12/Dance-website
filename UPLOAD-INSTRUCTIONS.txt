@@ -1,0 +1,7 @@
+Upload these files directly to the GitHub repository root:
+
+index.html
+style.css
+script.js
+
+The assets/images folder is no longer required because all image sections were removed.
