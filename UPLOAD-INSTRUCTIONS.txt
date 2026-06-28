@@ -1,8 +1,7 @@
-Upload these files directly into the GitHub repository root:
+Upload these files directly to your GitHub repository root:
 
 index.html
 style.css
 script.js
 
-Do not upload the ZIP file itself.
-Do not place the files inside another folder.
+Do not upload the ZIP only. Do not put the files inside another folder.
